@@ -7,11 +7,11 @@ Submitted by: **Muhammed Shoaib Ashfaq**
 Time spent: **3** hours spent in total
 
 <div>
-    <a href="https://www.loom.com/share/0c7f7e126d5c4953b4d0fdfbcdcdf2c7">
-      <p>Re: Tracking code changes in a source control repository | Apple Developer Documentation - 9 March 2024 - Watch Video</p>
+    <a href="https://www.loom.com/share/962f56d6e0074cb1845281fa43b5fc60">
+      <p>ChatGPT - 9 March 2024 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/0c7f7e126d5c4953b4d0fdfbcdcdf2c7">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/0c7f7e126d5c4953b4d0fdfbcdcdf2c7-with-play.gif">
+    <a href="https://www.loom.com/share/962f56d6e0074cb1845281fa43b5fc60">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/962f56d6e0074cb1845281fa43b5fc60-with-play.gif">
     </a>
 </div>
 
@@ -27,8 +27,8 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [ ] User can use the vertical orientation of the app on any device
-- [ ] User can track the question they are on and how many questions are left
-- [ ] User can see how many questions they got correct after answering all questions
+- [x] User can track the question they are on and how many questions are left
+- [x] User can see how many questions they got correct after answering all questions
 - [ ] User should be able to restart the game after they've finished answering all questions
 
 The following **additional** features are implemented:
