@@ -58,11 +58,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vme-mg-2GU">
+                                <rect key="frame" x="194.33333333333334" y="150.33333333333334" width="41.333333333333343" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lXV-Qj-1z3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Vme-mg-2GU" firstAttribute="top" secondItem="kdB-3V-GRU" secondAttribute="bottom" constant="40" id="3uJ-yl-3fU"/>
                             <constraint firstItem="kdB-3V-GRU" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="4GG-2x-B4O"/>
+                            <constraint firstItem="Vme-mg-2GU" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="Fka-pG-Y0U"/>
                             <constraint firstItem="iOq-Gp-D6V" firstAttribute="top" secondItem="zza-T5-b4H" secondAttribute="bottom" constant="50" id="LhN-Av-f7W"/>
                             <constraint firstItem="iOq-Gp-D6V" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="RWN-vz-H9O"/>
                             <constraint firstItem="iOq-Gp-D6V" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="VP0-by-B0h"/>
@@ -79,6 +87,7 @@
                         <outlet property="option1Button" destination="yXd-LC-QNo" id="DsD-h1-lRJ"/>
                         <outlet property="option2Button" destination="zMt-9r-dnk" id="Zgn-Cn-ATT"/>
                         <outlet property="option3Button" destination="adF-bk-w5O" id="yGY-hm-oOB"/>
+                        <outlet property="questionCountLabel" destination="Vme-mg-2GU" id="NQ6-y5-Wvy"/>
                         <outlet property="questionLabel" destination="zza-T5-b4H" id="cV8-dr-17E"/>
                     </connections>
                 </viewController>
