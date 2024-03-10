@@ -93,10 +93,14 @@ class TriviaViewController: UIViewController {
                                         Options(sent: "Charles Dickens", isAns: false),
                                         Options(sent: "Jane Austen", isAns: false)
                                     ])
-
-        
+        let triviaData4 = Question(question: "What is the tallest mammal on Earth?",
+                                    options: [
+                                        Options(sent: "Giraffe", isAns: true),
+                                        Options(sent: "Elephant", isAns: false),
+                                        Options(sent: "Hippo", isAns: false)
+                                    ])
                                       
-        return [triviaData1,triviaData2,triviaData3]
+        return [triviaData1,triviaData2,triviaData3,triviaData4]
     }
     
     
