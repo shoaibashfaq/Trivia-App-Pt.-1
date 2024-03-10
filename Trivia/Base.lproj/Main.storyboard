@@ -1,8 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IvI-6k-A4l">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="HvC-UP-jvG">
+            <objects>
+                <viewController id="IvI-6k-A4l" customClass="TriviaViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="85W-KU-C0C">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your Name?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zza-T5-b4H">
+                                <rect key="frame" x="139" y="321.33333333333331" width="152.33333333333337" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="iOq-Gp-D6V">
+                                <rect key="frame" x="177.66666666666666" y="391.66666666666669" width="75" height="149.00000000000006"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXd-LC-QNo">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="IvI-6k-A4l" eventType="touchUpInside" id="FtG-4a-5WB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-9r-dnk">
+                                        <rect key="frame" x="0.0" y="57.333333333333314" width="75" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="IvI-6k-A4l" eventType="touchUpInside" id="toG-oM-WLZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adF-bk-w5O">
+                                        <rect key="frame" x="0.0" y="114.66666666666661" width="75" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="optionSelected:" destination="IvI-6k-A4l" eventType="touchUpInside" id="ZCc-6E-Rxp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trivia Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdB-3V-GRU">
+                                <rect key="frame" x="125.66666666666667" y="79" width="178.66666666666663" height="31.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lXV-Qj-1z3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kdB-3V-GRU" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="4GG-2x-B4O"/>
+                            <constraint firstItem="iOq-Gp-D6V" firstAttribute="top" secondItem="zza-T5-b4H" secondAttribute="bottom" constant="50" id="LhN-Av-f7W"/>
+                            <constraint firstItem="iOq-Gp-D6V" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="RWN-vz-H9O"/>
+                            <constraint firstItem="iOq-Gp-D6V" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="VP0-by-B0h"/>
+                            <constraint firstItem="iOq-Gp-D6V" firstAttribute="centerY" secondItem="85W-KU-C0C" secondAttribute="centerY" id="fFj-eC-wyY"/>
+                            <constraint firstItem="zza-T5-b4H" firstAttribute="centerX" secondItem="85W-KU-C0C" secondAttribute="centerX" id="kS3-Gb-bTc"/>
+                            <constraint firstItem="kdB-3V-GRU" firstAttribute="top" secondItem="lXV-Qj-1z3" secondAttribute="top" constant="20" id="uSD-wi-Qib"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem id="X1k-Go-lta"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="option1Button" destination="yXd-LC-QNo" id="DsD-h1-lRJ"/>
+                        <outlet property="option2Button" destination="zMt-9r-dnk" id="Zgn-Cn-ATT"/>
+                        <outlet property="option3Button" destination="adF-bk-w5O" id="yGY-hm-oOB"/>
+                        <outlet property="questionLabel" destination="zza-T5-b4H" id="cV8-dr-17E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFN-Bl-4V9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.41860465116279" y="104.93562231759657"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
