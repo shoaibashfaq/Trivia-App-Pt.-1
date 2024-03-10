@@ -1,18 +1,18 @@
-# Project 3 - *Name of App Here*
+# Project 3 - Trivia App Pt. 1
 
-Submitted by: **Your Name Here**
+Submitted by: **Muhammed Shoaib Ashfaq**
 
-**Name of your app** is an app that ... [TODO] 
+**Trivia App Pt. 1** is an app that allows users to play the trivia game
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] User can view the current question and 4 different answers
-- [ ] User can view the next question after tapping an answer
-- [ ] User can answer at least 3 different questions
+- [x] User can view the current question and 4 different answers
+- [x] User can view the next question after tapping an answer
+- [x] User can answer at least 3 different questions
 
 
 The following **optional** features are implemented:
@@ -38,7 +38,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2023 Muhammed Shoaib Ashfaq
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
